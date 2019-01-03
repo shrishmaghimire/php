@@ -66,7 +66,8 @@ include('inc_session.php');?>
                     echo "<td>".$row['name']."</td>";
                     echo "<td>".$row['status']."</td>";
                     
-                    echo "<td><a class='btn btn-warning btn-sm' href=\"category_edit.php?cid=$row[id]\">Edit</a>| <a class='btn btn-danger btn-sm' href=\"deletecategory.php?cid=$row[id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";
+                     echo "<td><a href =editdeletecategory.php?id=".$row['id']."&action=edit>EDIT</a>";
+                      echo "<td><a href =editdeletecategory.php?id=".$row['id']."&action=delete>DELETE</a>";
                     echo "</tr>";
                 }
             }
